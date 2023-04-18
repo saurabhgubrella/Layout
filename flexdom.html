@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fcontainer{
+            display:flex;
+            /* flex-direction:column; */
+            /* justify-content:flex-start; */
+            /* align-items: center; */
+            border: 1px solid black;
+            height: 45vh;
+            /* flex-wrap:nowrap; */
+        }
+        .f-item{
+          width: 150px;
+          height: 100px;
+          border: 1px solid blue;
+          margin: 20px;
+          background-color:burlywood;
+        }
+        .item1{
+            order: 3;
+            /* flex-grow: 3; it will take the space of two box */
+            /* flex-shrink: 2; it will shrink with the space of two */
+            align-self: center;
+            /* flex-basis: 320px; it will control the width if flex direction is row else it will control the height if the flex direction is column */
+        }
+
+        .item2{
+            order: 4;
+            /* flex-grow: 2; */
+            align-self: center;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <div class="fcontainer">
+    <div class="f-item item1">
+      1      
+    </div>
+    <div class="f-item item2">
+        2
+    </div>
+    <div class="f-item item3">
+    3
+    </div>
+    <div class="f-item item4">
+    4
+    </div>
+    
+ 
+</div>
+</body>
+</html>

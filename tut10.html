@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    .cont{
+        border: 2px solid black;
+        height: 4000px;
+        background-color: rgb(12, 80, 119);
+      }
+      .box {
+        border: 2px solid black;
+        width: 150px;
+        height: 150px;
+        margin: 4px;
+        display: inline-block;
+      }
+      #box3 {
+        /* position: absolute; positions the element relative to the position of its first parent */
+        /* position:fixed; positions the element relative to the browser window; ex:for chat purpose at bottom */
+        /* position:relative;positions the element  relative to the normal position and will leave a gap at its normal position  ex: for gap in box */
+        /* position:sticky; positions the element relative to its place and stick there ex: for menu scroll   */
+        right: 4px;
+        top: 2px;
+      };
+   
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">Chat here</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>

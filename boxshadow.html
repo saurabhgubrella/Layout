@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow.html</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+               /* border: 2px solid green; */
+               background-color: rgb(201, 195, 195);
+               margin: 23px 12px;
+               padding: 23px 12px; 
+               /* box-shadow: (offset-x offset-y color);   */
+               /* box-shadow: 10px 13px rgb(88, 87, 87); */
+
+               /* box-shadow: (negative offset-x, negative offset-y ,color) for upward direction;
+               /* box-shadow: -10px -13px rgb(88, 87, 87); */
+
+               /* box-shadow: (offset-x offset-y , blurRadius, color); for blur effect
+               /* box-shadow: 10px 13px 20px rgb(88, 87, 87);  */
+                
+               /* box-shadow: (offset-x offset-y , blurRadius,spreadradius, color);for dark  effect */
+               /* box-shadow: 10px 13px 20px , 34px rgb(88, 87, 87);  */
+
+               /* box-shadow: 10px 13px 20px , 34px rgba; (red green blue alpha) alpha for dark effect */
+               
+               /* box-shadow: inset(offset-x offset-y , color)- for inside shadow effect
+               /* box-shadow: inset 10px 13px rgb(88, 87, 87);  */ 
+               
+               /* box-shadow: (offset-x offset-y color ,offset-x offset-y color ); for mutiple shadow   */
+               box-shadow: 10px 13px rgb(88, 87, 87) , 10px 13px blue ;  
+
+            }
+            .card h1{
+                /* for text shadow text-shadow: (offset-x , offset-y, blurRadius , color); */
+                text-shadow: 3px 2px 2px white;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h1>Card1</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, exercitationem rem doloremque aut earum veniam iste placeat nostrum sequi fugit necessitatibus fuga cumque vel, consequatur quis dignissimos at natus velit quibusdam reiciendis nulla accusantium.</p></div>
+        <div class="card" id="card2"><h1>Card2</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, exercitationem rem doloremque aut earum veniam iste placeat nostrum sequi fugit necessitatibus fuga cumque vel, consequatur quis dignissimos at natus velit quibusdam reiciendis nulla accusantium.</p></div>
+        <div class="card" id="card3"><h1>Card3</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, exercitationem rem doloremque aut earum veniam iste placeat nostrum sequi fugit necessitatibus fuga cumque vel, consequatur quis dignissimos at natus velit quibusdam reiciendis nulla accusantium.</p></div>
+    </div>
+</body>
+</html>

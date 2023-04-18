@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        .container{
+          border:2px solid black ;
+
+        }
+        /* if p is anywhere inside of div */
+        /* div p{
+            background-color: yellow;
+        } */
+        /* if p is contained by any li which is conatined by div */
+        /* div li p{
+            background-color: blue;
+        } */
+
+        /* if p is right inside div then this css will be applied */
+        /* div > p{
+            background-color: blueviolet;
+        } */
+
+        /* if p is right after div i.e is the next sibiling of div */
+        /* div + p{
+            background-color: darkorange;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is the more on selector file</h1>
+    <div class="container">
+       
+        <div class="row">
+            <ul>
+                <li><p>This is the 2nd Paragraph</p></li>
+            </ul>
+            <p>This is the 3 paragraph</p>
+        </div>
+        <p>This is the 4 paragraph</p>
+    </div>
+    <p>This is the 5 paragraph</p>
+</body>
+</html>

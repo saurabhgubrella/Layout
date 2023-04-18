@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form</title>
+</head>
+<body>
+    <form id="form">
+    <input placeholder="enter email"  id ="email" type="text"/>
+    <input placeholder="enter name" type="text" id="username"/>
+    <input type="submit"/>
+</form>
+</body>
+<script>
+    var form = document.getElementById("form");
+
+    form.addEventListener('submit' , function(event){
+        event.preventDefault()
+        var name = document.getElementById("username").value;
+        console.log(name);
+        var email = document.getElementById("email").value;
+        console.log(email);
+    })
+</script>
+</html>
